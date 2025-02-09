@@ -17,7 +17,8 @@ pipeline {
         }
         stage('Testing Apps') {
             steps {
-                echo 'Testing Apps'
+                // echo 'Testing Apps'
+                sh 'npm test'
             }
         }
         stage('Scanning Apps') {
