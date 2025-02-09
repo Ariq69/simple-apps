@@ -41,7 +41,8 @@ pipeline {
         }
         stage('Deploy Apps') {
             steps {
-                echo 'Deploy Apps'
+                // echo 'Deploy Apps'
+                sh 'docker compose up -d'
             }
         }
         stage('Publish image') {

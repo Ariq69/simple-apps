@@ -4,4 +4,4 @@ services:
     image: ariq69/simple-apps-image
     container_name: ct-simple-apps
     ports:
-      - "3000:3000"
+      - "5000:3000"
