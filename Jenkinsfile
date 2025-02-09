@@ -15,6 +15,12 @@ pipeline {
                 sh 'npm install'
             }
         }
+        stage('Copy env') {
+            steps {
+                // echo 'Testing Apps'
+                sh 'cp -p /home/ubuntu/Hari-1/simple-apps/.env .'
+            }
+        }
         stage('Testing Apps') {
             steps {
                 // echo 'Testing Apps'
