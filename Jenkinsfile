@@ -11,7 +11,8 @@ pipeline {
         // proses build apps
         stage('Build Apps') {
             steps {
-                echo 'Build Apps'
+                // echo 'Build Apps'
+                sh 'npm install'
             }
         }
         stage('Testing Apps') {
