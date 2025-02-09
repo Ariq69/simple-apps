@@ -35,7 +35,8 @@ pipeline {
         }
         stage('Build images') {
             steps {
-                echo 'Build images'
+                // echo 'Build images'
+                sh 'docker compose build'
             }
         }
         stage('Deploy Apps') {
